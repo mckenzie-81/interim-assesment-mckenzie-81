@@ -10,6 +10,25 @@ import { businessesRoutes } from "./pages/Businesses/businessesRoutes";
 
 function App() {
   return (
+    <>
+      {/* ── Anti-Phishing Disclaimer Banner ──────────────────── */}
+      <div
+        style={{
+          background: "#fef3c7",
+          color: "#92400e",
+          textAlign: "center",
+          padding: "8px 16px",
+          fontSize: "13px",
+          fontWeight: 500,
+          borderBottom: "1px solid #fde68a",
+          position: "relative",
+          zIndex: 9999,
+        }}
+      >
+        This is a <strong>student educational project</strong> — not
+        affiliated with Coinbase, Inc. No real transactions occur here.
+      </div>
+
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="cryptocurrencies" element={<Explore />} />
@@ -42,6 +61,7 @@ function App() {
         />
       ))}
     </Routes>
+    </>
   );
 }
 

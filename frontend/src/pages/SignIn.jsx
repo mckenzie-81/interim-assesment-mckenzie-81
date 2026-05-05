@@ -55,8 +55,11 @@ export default function SignIn() {
           <h1 className="text-[28px] font-semibold mb-2">
             Sign in to Coinbase
           </h1>
-          <p className="text-[15px] text-gray-400 mb-8 leading-relaxed">
+          <p className="text-[15px] text-gray-400 mb-4 leading-relaxed">
             Welcome back. Enter your credentials to access your account.
+          </p>
+          <p className="text-[12px] text-yellow-500/80 mb-6 px-3 py-2 border border-yellow-500/30 rounded-lg bg-yellow-500/5">
+            This is a student educational project — not affiliated with Coinbase, Inc.
           </p>
 
           {/* Error banner */}
